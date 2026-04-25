@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ae74f31f0cccaa9275f364e3539c9619 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ae74f31f0cccaa9275f364e3539c9619" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ae74f31f0cccaa9275f364e3539c9619 = L.map(
+                "map_ae74f31f0cccaa9275f364e3539c9619",
+                {
+                    center: [52.0, 19.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9f978252992854da0816afd5b31b045 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a9f978252992854da0816afd5b31b045.addTo(map_ae74f31f0cccaa9275f364e3539c9619);
+        
+    
+            var feature_group_561a37fdac14230ef8ba84fb094e64da = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f31fab7cbd8fd1b72ded3986cd0532e4 = L.marker(
+                [52.23, 21.01],
+                {
+}
+            ).addTo(feature_group_561a37fdac14230ef8ba84fb094e64da);
+        
+    
+            var icon_4a5bb3a48274019d6a18672ac3c90a4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a3fc18b1b0c326da4474ec323842e9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24db630a3a81d2666c9de6b22c1a61c1 = $(`<div id="html_24db630a3a81d2666c9de6b22c1a61c1" style="width: 100.0%; height: 100.0%;">Warszawski Festiwal Filmowy (Warszawa)</div>`)[0];
+                popup_2a3fc18b1b0c326da4474ec323842e9e.setContent(html_24db630a3a81d2666c9de6b22c1a61c1);
+            
+        
+
+        marker_f31fab7cbd8fd1b72ded3986cd0532e4.bindPopup(popup_2a3fc18b1b0c326da4474ec323842e9e)
+        ;
+
+        
+    
+    
+                marker_f31fab7cbd8fd1b72ded3986cd0532e4.setIcon(icon_4a5bb3a48274019d6a18672ac3c90a4b);
+            
+    
+            var marker_6d7526219158e2d631285c9da1b1b0b9 = L.marker(
+                [50.06, 19.94],
+                {
+}
+            ).addTo(feature_group_561a37fdac14230ef8ba84fb094e64da);
+        
+    
+            var icon_9dcf1cbc2e761fa1d98c8410d1a67258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9aff0a315848066ff7e68b71f667c21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7e2c4cc93e0f99510f66818f7d58747 = $(`<div id="html_a7e2c4cc93e0f99510f66818f7d58747" style="width: 100.0%; height: 100.0%;">Krakowski Festiwal Filmowy (Kraków)</div>`)[0];
+                popup_f9aff0a315848066ff7e68b71f667c21.setContent(html_a7e2c4cc93e0f99510f66818f7d58747);
+            
+        
+
+        marker_6d7526219158e2d631285c9da1b1b0b9.bindPopup(popup_f9aff0a315848066ff7e68b71f667c21)
+        ;
+
+        
+    
+    
+                marker_6d7526219158e2d631285c9da1b1b0b9.setIcon(icon_9dcf1cbc2e761fa1d98c8410d1a67258);
+            
+    
+            var marker_765de392fad9fc1defa3e9c3b80bcbe5 = L.marker(
+                [51.11, 17.03],
+                {
+}
+            ).addTo(feature_group_561a37fdac14230ef8ba84fb094e64da);
+        
+    
+            var icon_7d740e9f6b2fa1ec294fe65fa1fdf17a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e87b3a3db53b1993ea0b9730fdee35d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff1212f079865ff2006f28334a9caa08 = $(`<div id="html_ff1212f079865ff2006f28334a9caa08" style="width: 100.0%; height: 100.0%;">Wrocławski Festiwal Filmowy (Wrocław)</div>`)[0];
+                popup_9e87b3a3db53b1993ea0b9730fdee35d.setContent(html_ff1212f079865ff2006f28334a9caa08);
+            
+        
+
+        marker_765de392fad9fc1defa3e9c3b80bcbe5.bindPopup(popup_9e87b3a3db53b1993ea0b9730fdee35d)
+        ;
+
+        
+    
+    
+                marker_765de392fad9fc1defa3e9c3b80bcbe5.setIcon(icon_7d740e9f6b2fa1ec294fe65fa1fdf17a);
+            
+    
+            var marker_7efda81e74de13262062ed5e031daf3e = L.marker(
+                [52.4, 16.92],
+                {
+}
+            ).addTo(feature_group_561a37fdac14230ef8ba84fb094e64da);
+        
+    
+            var icon_297aa173b3d8e23d3e36469a370c3d1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbf168de9be434cc37f4159202eae475 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca33f4ca702f6792a4ddfad4f4ea2a6d = $(`<div id="html_ca33f4ca702f6792a4ddfad4f4ea2a6d" style="width: 100.0%; height: 100.0%;">Poznański Festiwal Filmowy (Poznań)</div>`)[0];
+                popup_bbf168de9be434cc37f4159202eae475.setContent(html_ca33f4ca702f6792a4ddfad4f4ea2a6d);
+            
+        
+
+        marker_7efda81e74de13262062ed5e031daf3e.bindPopup(popup_bbf168de9be434cc37f4159202eae475)
+        ;
+
+        
+    
+    
+                marker_7efda81e74de13262062ed5e031daf3e.setIcon(icon_297aa173b3d8e23d3e36469a370c3d1d);
+            
+    
+            var marker_e4e3caadd3011c0267072acf8a52f77c = L.marker(
+                [54.35, 18.65],
+                {
+}
+            ).addTo(feature_group_561a37fdac14230ef8ba84fb094e64da);
+        
+    
+            var icon_9d62daf4e3fdec07f16cc5808a54c2c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eec61756607ddb40f6979e480732cef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10b00b231c0d5b3bf60b351a1a916533 = $(`<div id="html_10b00b231c0d5b3bf60b351a1a916533" style="width: 100.0%; height: 100.0%;">Gdański Festiwal Filmowy (Gdańsk)</div>`)[0];
+                popup_2eec61756607ddb40f6979e480732cef.setContent(html_10b00b231c0d5b3bf60b351a1a916533);
+            
+        
+
+        marker_e4e3caadd3011c0267072acf8a52f77c.bindPopup(popup_2eec61756607ddb40f6979e480732cef)
+        ;
+
+        
+    
+    
+                marker_e4e3caadd3011c0267072acf8a52f77c.setIcon(icon_9d62daf4e3fdec07f16cc5808a54c2c3);
+            
+    
+            feature_group_561a37fdac14230ef8ba84fb094e64da.addTo(map_ae74f31f0cccaa9275f364e3539c9619);
+        
+    
+            var feature_group_96ea605c039dadf67ac8f19fcb3449bd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d3a8c1133dae369b7afedef5eb2bc231 = L.marker(
+                [52.23, 21.01],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_a15a776d59a45a76dd5d9ad296159075 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3219e58275b27d475fa3afb3dc779aef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86868a3ef3dc49cc39427963ad6ed886 = $(`<div id="html_86868a3ef3dc49cc39427963ad6ed886" style="width: 100.0%; height: 100.0%;">Kino Warszawa Centrum<br>Jan Kowalski (technik) (None)<br>Paweł Jaworski (technik)</div>`)[0];
+                popup_3219e58275b27d475fa3afb3dc779aef.setContent(html_86868a3ef3dc49cc39427963ad6ed886);
+            
+        
+
+        marker_d3a8c1133dae369b7afedef5eb2bc231.bindPopup(popup_3219e58275b27d475fa3afb3dc779aef)
+        ;
+
+        
+    
+    
+                marker_d3a8c1133dae369b7afedef5eb2bc231.setIcon(icon_a15a776d59a45a76dd5d9ad296159075);
+            
+    
+            var marker_f58962c68cd1cf205e3cb1a96fc63eba = L.marker(
+                [52.25, 21.0],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_a7b671325a99889192e10eab99cb8a2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4500997365ec427a0258a4da9060d1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02ea2647cdfae58f5cb579dda6d9e053 = $(`<div id="html_02ea2647cdfae58f5cb579dda6d9e053" style="width: 100.0%; height: 100.0%;">Kino Wisła<br>Anna Nowak (koordynator) (None)</div>`)[0];
+                popup_b4500997365ec427a0258a4da9060d1f.setContent(html_02ea2647cdfae58f5cb579dda6d9e053);
+            
+        
+
+        marker_f58962c68cd1cf205e3cb1a96fc63eba.bindPopup(popup_b4500997365ec427a0258a4da9060d1f)
+        ;
+
+        
+    
+    
+                marker_f58962c68cd1cf205e3cb1a96fc63eba.setIcon(icon_a7b671325a99889192e10eab99cb8a2a);
+            
+    
+            var marker_4b4d69937a7090aca0b66f294e9b669e = L.marker(
+                [52.22, 21.02],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_3ad7f75613a535c46b1ecc9d73550167 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7607167f92b5c4ca64c91ecd119eb6ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88b522dcb3788d82aee171df61452f7f = $(`<div id="html_88b522dcb3788d82aee171df61452f7f" style="width: 100.0%; height: 100.0%;">Kino Luna<br>Piotr Wiśniewski (obsługa) (None)</div>`)[0];
+                popup_7607167f92b5c4ca64c91ecd119eb6ca.setContent(html_88b522dcb3788d82aee171df61452f7f);
+            
+        
+
+        marker_4b4d69937a7090aca0b66f294e9b669e.bindPopup(popup_7607167f92b5c4ca64c91ecd119eb6ca)
+        ;
+
+        
+    
+    
+                marker_4b4d69937a7090aca0b66f294e9b669e.setIcon(icon_3ad7f75613a535c46b1ecc9d73550167);
+            
+    
+            var marker_f17337f40cad1b7b8f0fe66ed68bfbe0 = L.marker(
+                [50.06, 19.94],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_e43b99ed15d2d45024df8eb418ca4236 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_081461097146b082a141aacc521f16f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb68d5ab5dc2db5b723cf6c3ad8ee163 = $(`<div id="html_cb68d5ab5dc2db5b723cf6c3ad8ee163" style="width: 100.0%; height: 100.0%;">Kino Pod Baranami<br>Katarzyna Wójcik (technik) (None)</div>`)[0];
+                popup_081461097146b082a141aacc521f16f3.setContent(html_cb68d5ab5dc2db5b723cf6c3ad8ee163);
+            
+        
+
+        marker_f17337f40cad1b7b8f0fe66ed68bfbe0.bindPopup(popup_081461097146b082a141aacc521f16f3)
+        ;
+
+        
+    
+    
+                marker_f17337f40cad1b7b8f0fe66ed68bfbe0.setIcon(icon_e43b99ed15d2d45024df8eb418ca4236);
+            
+    
+            var marker_26fec12efd9ce1a86682195359566a62 = L.marker(
+                [50.05, 19.93],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_a9d5c7a4af44dc13cd83ee64c0ad184e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6023101e37b9f7cffc14ab42dd04c72e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3137a909c1b52bd1581d05643bbf3513 = $(`<div id="html_3137a909c1b52bd1581d05643bbf3513" style="width: 100.0%; height: 100.0%;">Kino Kijów<br>Michał Kamiński (koordynator) (None)</div>`)[0];
+                popup_6023101e37b9f7cffc14ab42dd04c72e.setContent(html_3137a909c1b52bd1581d05643bbf3513);
+            
+        
+
+        marker_26fec12efd9ce1a86682195359566a62.bindPopup(popup_6023101e37b9f7cffc14ab42dd04c72e)
+        ;
+
+        
+    
+    
+                marker_26fec12efd9ce1a86682195359566a62.setIcon(icon_a9d5c7a4af44dc13cd83ee64c0ad184e);
+            
+    
+            var marker_f40fb815155e852ed7fb8804d5158c99 = L.marker(
+                [50.07, 19.95],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_1f683e92276cfe5aa6c41721b0c85604 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c39f65e261dbb42e02006581262344e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97d652a183f50122e27cbb212aa30caf = $(`<div id="html_97d652a183f50122e27cbb212aa30caf" style="width: 100.0%; height: 100.0%;">Kino Mikro<br>Paweł Lewandowski (obsługa) (None)</div>`)[0];
+                popup_c39f65e261dbb42e02006581262344e8.setContent(html_97d652a183f50122e27cbb212aa30caf);
+            
+        
+
+        marker_f40fb815155e852ed7fb8804d5158c99.bindPopup(popup_c39f65e261dbb42e02006581262344e8)
+        ;
+
+        
+    
+    
+                marker_f40fb815155e852ed7fb8804d5158c99.setIcon(icon_1f683e92276cfe5aa6c41721b0c85604);
+            
+    
+            var marker_5ee80da9178a3cd7c36a01dff4474bed = L.marker(
+                [51.11, 17.03],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_5e79cb92d87c4bbec89f02701d23c688 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fa92eb6876fcf7ff4de6034abc6f129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be750796646ae4b50c70b4fc8c3d11be = $(`<div id="html_be750796646ae4b50c70b4fc8c3d11be" style="width: 100.0%; height: 100.0%;">Kino Nowe Horyzonty<br>Tomasz Zieliński (technik) (None)</div>`)[0];
+                popup_9fa92eb6876fcf7ff4de6034abc6f129.setContent(html_be750796646ae4b50c70b4fc8c3d11be);
+            
+        
+
+        marker_5ee80da9178a3cd7c36a01dff4474bed.bindPopup(popup_9fa92eb6876fcf7ff4de6034abc6f129)
+        ;
+
+        
+    
+    
+                marker_5ee80da9178a3cd7c36a01dff4474bed.setIcon(icon_5e79cb92d87c4bbec89f02701d23c688);
+            
+    
+            var marker_90af56d33e55195c393b65199f2f8357 = L.marker(
+                [51.1, 17.05],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_a21154bc0d7a5629c615e94457d0b86a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cb779ccc1a54ccbe4870a167003d704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2aa0812d8ae1097ef40bb9a21bc1ca6 = $(`<div id="html_b2aa0812d8ae1097ef40bb9a21bc1ca6" style="width: 100.0%; height: 100.0%;">Kino Helios Wrocław<br>Magdalena Szymańska (koordynator) (None)</div>`)[0];
+                popup_2cb779ccc1a54ccbe4870a167003d704.setContent(html_b2aa0812d8ae1097ef40bb9a21bc1ca6);
+            
+        
+
+        marker_90af56d33e55195c393b65199f2f8357.bindPopup(popup_2cb779ccc1a54ccbe4870a167003d704)
+        ;
+
+        
+    
+    
+                marker_90af56d33e55195c393b65199f2f8357.setIcon(icon_a21154bc0d7a5629c615e94457d0b86a);
+            
+    
+            var marker_80a938af2d7f91f669c14659d8090332 = L.marker(
+                [51.12, 17.02],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_53332bca9c57357ce9e5337d91047d5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_923fc8d5d48e1b2a6cf93a5879926ec8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11c08015f3f616dca2b4f74e772cd189 = $(`<div id="html_11c08015f3f616dca2b4f74e772cd189" style="width: 100.0%; height: 100.0%;">Kino DCF<br>Krzysztof Woźniak (obsługa) (None)</div>`)[0];
+                popup_923fc8d5d48e1b2a6cf93a5879926ec8.setContent(html_11c08015f3f616dca2b4f74e772cd189);
+            
+        
+
+        marker_80a938af2d7f91f669c14659d8090332.bindPopup(popup_923fc8d5d48e1b2a6cf93a5879926ec8)
+        ;
+
+        
+    
+    
+                marker_80a938af2d7f91f669c14659d8090332.setIcon(icon_53332bca9c57357ce9e5337d91047d5c);
+            
+    
+            var marker_855b6f8fd2eb20b6666491cc6370cc27 = L.marker(
+                [52.4, 16.92],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_d6bf26fa9524ca27cec781518e9a4546 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6293701e6b6bc565424ec9c5d8ba2612 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c5bcf12004ee42eeb3c58a5c6c9c2c5 = $(`<div id="html_3c5bcf12004ee42eeb3c58a5c6c9c2c5" style="width: 100.0%; height: 100.0%;">Kino Muza<br>Agnieszka Dąbrowska (technik) (None)</div>`)[0];
+                popup_6293701e6b6bc565424ec9c5d8ba2612.setContent(html_3c5bcf12004ee42eeb3c58a5c6c9c2c5);
+            
+        
+
+        marker_855b6f8fd2eb20b6666491cc6370cc27.bindPopup(popup_6293701e6b6bc565424ec9c5d8ba2612)
+        ;
+
+        
+    
+    
+                marker_855b6f8fd2eb20b6666491cc6370cc27.setIcon(icon_d6bf26fa9524ca27cec781518e9a4546);
+            
+    
+            var marker_5c65035b0bcd3fdf653fa559f7940012 = L.marker(
+                [52.41, 16.93],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_1336db9dca4901401adea3cd0bcb4974 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf8fd7ba2dfa14dcf3ad44eed1d3dd53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1998b61ac11fc36f6237c177787556b8 = $(`<div id="html_1998b61ac11fc36f6237c177787556b8" style="width: 100.0%; height: 100.0%;">Kino Rialto<br>Marcin Kaczmarek (koordynator) (None)</div>`)[0];
+                popup_cf8fd7ba2dfa14dcf3ad44eed1d3dd53.setContent(html_1998b61ac11fc36f6237c177787556b8);
+            
+        
+
+        marker_5c65035b0bcd3fdf653fa559f7940012.bindPopup(popup_cf8fd7ba2dfa14dcf3ad44eed1d3dd53)
+        ;
+
+        
+    
+    
+                marker_5c65035b0bcd3fdf653fa559f7940012.setIcon(icon_1336db9dca4901401adea3cd0bcb4974);
+            
+    
+            var marker_02a7a38351c9c04b6b7cf5ddbed6607b = L.marker(
+                [52.39, 16.91],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_f44c926302651b9d73e9bd3b0ef250b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a092c8a7cff1f49a2322da7ca232304 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe047c1ff5d068842697064663527f48 = $(`<div id="html_fe047c1ff5d068842697064663527f48" style="width: 100.0%; height: 100.0%;">Kino Apollo<br>Łukasz Piotrowski (obsługa) (None)</div>`)[0];
+                popup_1a092c8a7cff1f49a2322da7ca232304.setContent(html_fe047c1ff5d068842697064663527f48);
+            
+        
+
+        marker_02a7a38351c9c04b6b7cf5ddbed6607b.bindPopup(popup_1a092c8a7cff1f49a2322da7ca232304)
+        ;
+
+        
+    
+    
+                marker_02a7a38351c9c04b6b7cf5ddbed6607b.setIcon(icon_f44c926302651b9d73e9bd3b0ef250b2);
+            
+    
+            var marker_5d8a063d0fd4ea5e8c435b650079f9f2 = L.marker(
+                [54.35, 18.65],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_1dd4188b63f004181ba819bb87d3f457 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b62847e87f2bc1f4eaaed20b39916305 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0a3ec733c847645f1025a29fc1913c5 = $(`<div id="html_a0a3ec733c847645f1025a29fc1913c5" style="width: 100.0%; height: 100.0%;">Kino Kameralne Cafe<br>Ewa Grabowska (technik) (None)</div>`)[0];
+                popup_b62847e87f2bc1f4eaaed20b39916305.setContent(html_a0a3ec733c847645f1025a29fc1913c5);
+            
+        
+
+        marker_5d8a063d0fd4ea5e8c435b650079f9f2.bindPopup(popup_b62847e87f2bc1f4eaaed20b39916305)
+        ;
+
+        
+    
+    
+                marker_5d8a063d0fd4ea5e8c435b650079f9f2.setIcon(icon_1dd4188b63f004181ba819bb87d3f457);
+            
+    
+            var marker_64d70aa6499dd20c2b59b76f2b385d63 = L.marker(
+                [54.36, 18.64],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_12b014180064e6192314505ca8130987 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3bfa713e46310de0c392d2783f12d2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a60be034ffd5b754fbf2de3ca3e6e100 = $(`<div id="html_a60be034ffd5b754fbf2de3ca3e6e100" style="width: 100.0%; height: 100.0%;">Kino Helios Gdańsk<br>Damian Pawlak (koordynator) (None)</div>`)[0];
+                popup_c3bfa713e46310de0c392d2783f12d2d.setContent(html_a60be034ffd5b754fbf2de3ca3e6e100);
+            
+        
+
+        marker_64d70aa6499dd20c2b59b76f2b385d63.bindPopup(popup_c3bfa713e46310de0c392d2783f12d2d)
+        ;
+
+        
+    
+    
+                marker_64d70aa6499dd20c2b59b76f2b385d63.setIcon(icon_12b014180064e6192314505ca8130987);
+            
+    
+            var marker_3d3f91e3100fafd3b421c13262ad89ef = L.marker(
+                [54.34, 18.66],
+                {
+}
+            ).addTo(feature_group_96ea605c039dadf67ac8f19fcb3449bd);
+        
+    
+            var icon_044bda57c3acf6000e37d6856cd30f55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07791af98fdef8769fff1cf72fecae8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fcf925b6fd88ac2ddf52af550aefe39 = $(`<div id="html_6fcf925b6fd88ac2ddf52af550aefe39" style="width: 100.0%; height: 100.0%;">Kino Neptun<br>Karol Michalski (obsługa) (None)</div>`)[0];
+                popup_07791af98fdef8769fff1cf72fecae8a.setContent(html_6fcf925b6fd88ac2ddf52af550aefe39);
+            
+        
+
+        marker_3d3f91e3100fafd3b421c13262ad89ef.bindPopup(popup_07791af98fdef8769fff1cf72fecae8a)
+        ;
+
+        
+    
+    
+                marker_3d3f91e3100fafd3b421c13262ad89ef.setIcon(icon_044bda57c3acf6000e37d6856cd30f55);
+            
+    
+            feature_group_96ea605c039dadf67ac8f19fcb3449bd.addTo(map_ae74f31f0cccaa9275f364e3539c9619);
+        
+    
+            var layer_control_e2ab1a68ca3df2da822116c55d3468dc_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a9f978252992854da0816afd5b31b045,
+                },
+                overlays :  {
+                    "Festiwale" : feature_group_561a37fdac14230ef8ba84fb094e64da,
+                    "Kina" : feature_group_96ea605c039dadf67ac8f19fcb3449bd,
+                },
+            };
+            let layer_control_e2ab1a68ca3df2da822116c55d3468dc = L.control.layers(
+                layer_control_e2ab1a68ca3df2da822116c55d3468dc_layers.base_layers,
+                layer_control_e2ab1a68ca3df2da822116c55d3468dc_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_ae74f31f0cccaa9275f364e3539c9619);
+
+        
+</script>
+</html>
